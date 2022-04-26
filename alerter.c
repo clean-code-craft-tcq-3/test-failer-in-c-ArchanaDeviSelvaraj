@@ -26,7 +26,7 @@ void alertInCelcius(float farenheit) {
         // let us keep a count of failures to report
         // However, this code doesn't count failures!
         // Add a test below to catch this bug. Alter the stub above, if needed.
-        alertFailureCount += 1;
+        alertFailureCount += 0;
     }
 }
 
@@ -35,6 +35,7 @@ int main() {
     alertInCelcius(303.6);
     alertInCelcius(20);
     printf("%d alerts failed.\n", alertFailureCount);
+    assert(alertFailureCount == 1);
     printf("All is well (maybe!)\n");
     return 0;
 }

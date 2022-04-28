@@ -7,7 +7,7 @@ char* buffer[25];
 //const char* colorname[25];
 
 int printColorMap() {
-    const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
+    char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     int i = 0, j = 0;
     for(i = 0; i < 5; i++) {

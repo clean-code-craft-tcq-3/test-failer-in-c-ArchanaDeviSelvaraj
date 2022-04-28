@@ -27,9 +27,9 @@ int alertFailureCount = 0;
     }
 
 int main() {
-    environment[5]="Test";
+    environment="Test";
     CheckalertFailureCount(400.5);
-    environment[12]="Integration";
+    environment="Integration";
     CheckalertFailureCount(303.6);
     CheckalertFailureCount(20);
     printf("%d alerts failed.\n", alertFailureCount);

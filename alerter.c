@@ -3,9 +3,20 @@
 #include "FarenheitToCelsius.h"
 
 int alertFailureCount = 0;
-int returnCode = FarenheitToCelsius(farenheit);
-    int CheckalertFailureCount(returnCode)
+
+    void CheckalertFailureCount(returnCode)
     {
+        // Return 200 for ok
+        // Return 500 for not-ok
+        // stub always succeeds and returns 200
+    if(celcius > 0)
+    {
+        return 200;
+    }
+    else
+    {
+        return 500;
+    }
         if (returnCode != 200) {
         // non-ok response is not an error! Issues happen in life!
         // let us keep a count of failures to report

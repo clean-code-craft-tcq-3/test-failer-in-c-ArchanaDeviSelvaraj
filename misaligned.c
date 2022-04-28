@@ -3,6 +3,7 @@
 #include <string.h>
 
 const char* colorpair[25];
+const char* colorname[25];
 
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
@@ -11,8 +12,10 @@ int printColorMap() {
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
             printf("%d  %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
-            strcat(majorColor[i],minorColor[i]);
-            colorpair[i * 5 + j] = majorColor[i];
+            strcpy(colorname[i], majorColor[i]);
+            strcat(colorname[i], minorColor[i]);
+            //strcat(majorColor[i],minorColor[i]);
+            colorpair[i * 5 + j] = colorname[i];
         }
     }
     return i * j;

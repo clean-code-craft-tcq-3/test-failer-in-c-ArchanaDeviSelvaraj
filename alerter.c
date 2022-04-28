@@ -4,20 +4,23 @@
 
 int alertFailureCount = 0;
 
-    void CheckalertFailureCount(celcius)
+    void CheckalertFailureCount(farenheit)
     {
         // Return 200 for ok
         // Return 500 for not-ok
         // stub always succeeds and returns 200
-    if(celcius > 0)
-    {
-        return 200;
-    }
-    else
-    {
-        return 500;
-    }
-        if (returnCode != 200) {
+        celcius = FarenheitToCelsius(farenheit);
+        if (environment = "Test")
+        {
+            returncode = stub(celcius);
+        }
+        else
+        {
+            //Integration environment
+            returncode = network(celcius);
+        }
+        if (returnCode != 200) 
+        {
         // non-ok response is not an error! Issues happen in life!
         // let us keep a count of failures to report
         // However, this code doesn't count failures!
@@ -30,7 +33,6 @@ int main() {
     CheckalertFailureCount(400.5);
     CheckalertFailureCount(303.6);
     CheckalertFailureCount(20);
-    CheckalertFailureCount(returnCode);
     printf("%d alerts failed.\n", alertFailureCount);
     assert(alertFailureCount == 1);
     printf("All is well (maybe!)\n");

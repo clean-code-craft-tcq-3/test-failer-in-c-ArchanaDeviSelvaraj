@@ -21,7 +21,7 @@ int printColorMap() {
 
 int main() {
     int result = printColorMap();
-    int output=0;
+    int errorcount;
     printf("Pair number 1 : %s|%s\n", majorColorlist[0], minorColorlist[0]);
     printf("Pair number 4 : %s|%s\n", majorColorlist[3], minorColorlist[3]);
     printf("Pair number 16 : %s|%s\n", majorColorlist[15], minorColorlist[15]);
@@ -29,16 +29,16 @@ int main() {
     const char* pairtwominorcolor = "Orange";
     if(majorColorlist[0]==paironemajorcolor)
     {
-        output=1;
-        //output=1 means expected results obtained
+        errorcount=0;
+        //errorcount=1 means expected results obtained
     }
     if(minorColorlist[1]==pairtwominorcolor)
     {
-        output=2;
-        //output=2 means expected results not obtained
+        errorcount+=1;
+        //errorcount>0 means expected results not obtained
     }
-    assert(output == 1);
-    //assert(output == 2);
+    assert(errorcount == 0);
+    //assert(errorcount > 0);
     assert(result == 25);
     printf("All is well (maybe!)\n");
     return 0;

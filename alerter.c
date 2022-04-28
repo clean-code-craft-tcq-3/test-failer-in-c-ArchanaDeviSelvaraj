@@ -5,7 +5,7 @@
 int alertFailureCount = 0;
 enum environments{Test,Integration}environment;
 
-    void FarenheitToCelcius(float farenheit) 
+    void AlertFarenheitToCelcius(float farenheit) 
     {
         celcius = (farenheit - 32) * 5 / 9;
         printf("ALERT: Temperature is %.1f celcius.\n", celcius);
@@ -30,10 +30,10 @@ enum environments{Test,Integration}environment;
 
 int main() {
     environment=Test;
-    FarenheitToCelcius(400.5);
+    AlertFarenheitToCelcius(400.5);
     environment=Integration;
-    FarenheitToCelcius(303.6);
-    FarenheitToCelcius(20);
+    AlertFarenheitToCelcius(303.6);
+    AlertFarenheitToCelcius(20);
     printf("%d alerts failed.\n", alertFailureCount);
     //assert(alertFailureCount == 1);
     printf("All is well (maybe!)\n");

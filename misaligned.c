@@ -25,14 +25,14 @@ int main() {
     printf("%s|%s\n", majorColorlist[0], minorColorlist[0]);
     printf("%s|%s\n", majorColorlist[3], minorColorlist[3]);
     printf("%s|%s\n", majorColorlist[15], minorColorlist[15]);
-    const char* majorcolorpairone = "White";
-    const char* minorcolorpairtwo = "Orange";
-    if(majorColorlist[0]==majorcolorpairone)
+    const char* paironemajorcolor = "White";
+    const char* pairtwominorcolor = "Orange";
+    if(majorColorlist[0]==paironemajorcolor)
     {
         output=1;
         //output=1 means expected results obtained
     }
-    if(minorColorlist[1]==minorcolorpairtwo)
+    if(minorColorlist[1]==pairtwominorcolor)
     {
         output=2;
         //output=2 means expected results not obtained

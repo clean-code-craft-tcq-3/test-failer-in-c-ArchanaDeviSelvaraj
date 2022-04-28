@@ -35,7 +35,7 @@ int main() {
     AlertFarenheitToCelcius(303.6);
     AlertFarenheitToCelcius(20);
     printf("%d alerts failed.\n", alertFailureCount);
-    //assert(alertFailureCount == 1);
+    assert(alertFailureCount == 1);
     printf("All is well (maybe!)\n");
     return 0;
 }

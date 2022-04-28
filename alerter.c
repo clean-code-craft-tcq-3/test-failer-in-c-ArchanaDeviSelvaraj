@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <assert.h>
-#include "FarenheitToCelsius.h"
+#include "FarenheitToCelcius.h"
 
 int alertFailureCount = 0;
 enum environments{Test,Integration}environment;
 
     void CheckalertFailureCount(float farenheit)
     {
-        celcius = FarenheitToCelsius(farenheit);
+        celcius = FarenheitToCelcius(farenheit);
         if (environment == Test)
         {
             returncode = stub(celcius);

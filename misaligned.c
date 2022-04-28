@@ -22,7 +22,7 @@ int printColorMap() {
 
 int main() {
     int result = printColorMap();
-    int output;
+    int output=0;
     printf("%s|%s\n", majorColorlist[0], minorColorlist[0]);
     printf("%s|%s\n", majorColorlist[3], minorColorlist[3]);
     printf("%s|%s\n", majorColorlist[15], minorColorlist[15]);
@@ -31,13 +31,13 @@ int main() {
     if(majorColorlist[0]==majorcolorpairone)
     {
         output=1;
-        assert(output == 1);
     }
     if(minorColorlist[1]==minorcolorpairtwo)
     {
-        output=1;
-        assert(output == 1);
+        output=2;
     }
+    assert(output == 1);
+    assert(output == 2);
     assert(result == 25);
     //assert(result == 0);
     //assert(strcmp(majorColorlist[0],"White"));

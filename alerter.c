@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include "FarenheitToCelsius.h"
+#include <string.h>
 
 int alertFailureCount = 0;
 char environment[15];
@@ -8,7 +9,7 @@ char environment[15];
     void CheckalertFailureCount(float farenheit)
     {
         celcius = FarenheitToCelsius(farenheit);
-        if (environment[15] == "Test")
+        if (strcmp(environment[15],"Test"))
         {
             returncode = stub(celcius);
         }

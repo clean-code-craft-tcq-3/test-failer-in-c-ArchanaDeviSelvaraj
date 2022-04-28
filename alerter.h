@@ -1,5 +1,4 @@
-float FarenheitToCelcius(float);
-void CheckalertFailureCount(float);
+void FarenheitToCelcius(float);
 int stub(float);
 int network(float);
 float farenheit;
@@ -31,9 +30,3 @@ int network(float celcius)
         return 500;
     }
 }
-float FarenheitToCelcius(float farenheit) 
-{
-    celcius = (farenheit - 32) * 5 / 9;
-    printf("ALERT: Temperature is %.1f celcius.\n", celcius);
-    return celcius;
- }

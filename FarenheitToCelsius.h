@@ -4,3 +4,4 @@ int stub(float );
 int network(float );
 float farenheit;
 float celcius;
+int returncode;

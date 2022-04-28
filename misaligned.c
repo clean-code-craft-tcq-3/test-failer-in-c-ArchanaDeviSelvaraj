@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <string.h>
 
-const char* colorpair[25];
+char* colorpair[25];
 char* buffer[25];
 //const char* colorname[25];
 

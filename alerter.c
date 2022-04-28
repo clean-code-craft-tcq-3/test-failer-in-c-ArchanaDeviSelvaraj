@@ -4,7 +4,7 @@
 
 int alertFailureCount = 0;
 
-    void CheckalertFailureCount(returnCode)
+    void CheckalertFailureCount(celcius)
     {
         // Return 200 for ok
         // Return 500 for not-ok
@@ -27,9 +27,9 @@ int alertFailureCount = 0;
     }
 
 int main() {
-    FarenheitToCelsius(400.5);
-    FarenheitToCelsius(303.6);
-    FarenheitToCelsius(20);
+    CheckalertFailureCount(400.5);
+    CheckalertFailureCount(303.6);
+    CheckalertFailureCount(20);
     CheckalertFailureCount(returnCode);
     printf("%d alerts failed.\n", alertFailureCount);
     assert(alertFailureCount == 1);

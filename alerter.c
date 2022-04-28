@@ -4,7 +4,7 @@
 
 int alertFailureCount = 0;
 
-    void CheckalertFailureCount(farenheit)
+    void CheckalertFailureCount(float farenheit)
     {
         celcius = FarenheitToCelsius(farenheit);
         if (environment = "Test")

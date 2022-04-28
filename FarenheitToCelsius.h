@@ -5,3 +5,4 @@ int network(float );
 float farenheit;
 float celcius;
 int returncode;
+char environment[15];

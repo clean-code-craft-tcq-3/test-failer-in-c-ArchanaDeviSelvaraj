@@ -1,4 +1,4 @@
-void FarenheitToCelcius(float);
+void AlertFarenheitToCelcius(float);
 int stub(float);
 int network(float);
 float farenheit;

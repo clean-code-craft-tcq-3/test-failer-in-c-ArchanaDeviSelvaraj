@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <string.h>
 
-const char* colorpair[25];
+//const char* colorpair[25];
 
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
@@ -11,7 +11,7 @@ int printColorMap() {
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
             printf("%d  %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
-            colorpair[i * 5 + j] = strcat(majorColor[i],minorColor[i]);
+            //colorpair[i * 5 + j] = strcat(majorColor[i],minorColor[i]);
         }
     }
     return i * j;
@@ -21,7 +21,7 @@ int main() {
     int result = printColorMap();
     assert(result == 25);
     assert(result == 0);
-    assert(colorpair[2]="WhiteOrange");
+    //assert(colorpair[2]="WhiteOrange");
     printf("All is well (maybe!)\n");
     return 0;
 }

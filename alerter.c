@@ -19,7 +19,7 @@ int main() {
     FarenheitToCelsius(400.5);
     FarenheitToCelsius(303.6);
     FarenheitToCelsius(20);
-    CheckalertFailureCount(returnCode)[;
+    CheckalertFailureCount(returnCode);
     printf("%d alerts failed.\n", alertFailureCount);
     assert(alertFailureCount == 1);
     printf("All is well (maybe!)\n");

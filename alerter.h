@@ -5,7 +5,7 @@ int network(float);
 float farenheit;
 float celcius;
 int returncode;
-int stub(celcius)
+int stub(float celcius)
 {
     // Return 200 for ok
     // Return 500 for not-ok
@@ -18,7 +18,7 @@ int stub(celcius)
         return 500;
     }
 }
-int network(celcius)
+int network(float celcius)
 {
     // Return 200 for ok
     // Return 500 for not-ok

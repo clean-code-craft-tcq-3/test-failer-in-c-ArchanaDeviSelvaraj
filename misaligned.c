@@ -38,7 +38,7 @@ int main() {
         //errorcount>0 means expected results not obtained
     }
     assert(errorcount == 0);
-    assert(errorcount > 0);
+    //assert(errorcount > 0);
     assert(result == 25);
     printf("All is well (maybe!)\n");
     return 0;

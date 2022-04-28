@@ -27,7 +27,7 @@ int main() {
     printf("%s|%s\n", majorColorlist[3], minorColorlist[3]);
     printf("%s|%s\n", majorColorlist[15], minorColorlist[15]);
     const char* majorcolorpairone = "White";
-    if(majorColorlist[0]=="White")
+    if(majorColorlist[0]==majorcolorpairone)
     {
         output=1;
     }

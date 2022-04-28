@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include "FarenheitToCelsius.h"
 
 int alertFailureCount = 0;
 

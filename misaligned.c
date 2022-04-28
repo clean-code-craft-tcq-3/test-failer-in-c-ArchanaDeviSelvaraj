@@ -28,7 +28,7 @@ int main() {
     printf("%s|%s\n", majorColorlist[15], minorColorlist[15]);
     const char* majorcolorpairone = "White";
     output = strcmp(majorColorlist[0], majorcolorpairone);
-    //assert(output == 1);
+    assert(output == 1);
     assert(result == 25);
     //assert(result == 0);
     //assert(strcmp(majorColorlist[0],"White"));

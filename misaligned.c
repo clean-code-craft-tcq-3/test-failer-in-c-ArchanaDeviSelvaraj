@@ -30,12 +30,12 @@ int main() {
     if(majorColorlist[0]==paironemajorcolor)
     {
         errorcount=0;
-        //errorcount=1 means expected results obtained
+        //errorcount=0 means expected results obtained
     }
     if(minorColorlist[1]==pairtwominorcolor)
     {
         errorcount+=1;
-        errorcount>0 means expected results not obtained
+        //errorcount>0 means expected results not obtained
     }
     assert(errorcount == 0);
     assert(errorcount > 0);

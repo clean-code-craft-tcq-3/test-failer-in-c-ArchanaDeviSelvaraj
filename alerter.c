@@ -3,12 +3,12 @@
 #include "FarenheitToCelsius.h"
 
 int alertFailureCount = 0;
-char environment[15];
+char environment[];
 
     void CheckalertFailureCount(float farenheit)
     {
         celcius = FarenheitToCelsius(farenheit);
-        if (environment[15] == "Test")
+        if (environment[] == "Test")
         {
             returncode = stub(celcius);
         }
@@ -28,9 +28,9 @@ char environment[15];
     }
 
 int main() {
-    environment[15]="Test";
+    environment[]="Test";
     CheckalertFailureCount(400.5);
-    environment[15]="Integration";
+    environment[]="Integration";
     CheckalertFailureCount(303.6);
     CheckalertFailureCount(20);
     printf("%d alerts failed.\n", alertFailureCount);

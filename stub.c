@@ -1,4 +1,4 @@
-#include "FarenheitToCelsius.h"
+#include "FarenheitToCelcius.h"
 int stub(celcius)
 {
     // Return 200 for ok

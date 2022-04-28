@@ -4,11 +4,12 @@
 
 int alertFailureCount = 0;
 enum environments{Test,Integration};
+enum environments environment;
 
     void CheckalertFailureCount(float farenheit)
     {
         celcius = FarenheitToCelsius(farenheit);
-        if (environment == "Test"))
+        if (environment == Test)
         {
             returncode = stub(celcius);
         }
@@ -28,7 +29,6 @@ enum environments{Test,Integration};
     }
 
 int main() {
-    enum environments environment;
     environment=Test;
     CheckalertFailureCount(400.5);
     environment=Integration;

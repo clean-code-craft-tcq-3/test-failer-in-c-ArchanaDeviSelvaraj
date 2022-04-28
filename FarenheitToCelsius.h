@@ -1,3 +1,3 @@
-int FarenheitToCelsius(float ); 
+void FarenheitToCelsius(float ); 
 float farenheit;
 float celcius;

@@ -29,9 +29,9 @@ char *environment;
     }
 
 int main() {
-    environment="Test";
+    environment=Test;
     CheckalertFailureCount(400.5);
-    environment="Integration";
+    environment=Integration;
     CheckalertFailureCount(303.6);
     CheckalertFailureCount(20);
     printf("%d alerts failed.\n", alertFailureCount);

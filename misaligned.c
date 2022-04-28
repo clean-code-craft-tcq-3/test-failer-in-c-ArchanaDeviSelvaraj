@@ -22,6 +22,8 @@ int main() {
     int result = printColorMap();
     assert(result == 25);
     assert(result == 0);
+    assert(majorColorlist[0]=="White");
+    assert(minorColorlist[0]=="Blue");
     printf("All is well (maybe!)\n");
     return 0;
 }

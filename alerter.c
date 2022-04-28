@@ -4,7 +4,7 @@
 #include <string.h>
 
 int alertFailureCount = 0;
-char environment[15];
+char environment;
 
     void CheckalertFailureCount(float farenheit)
     {

@@ -1,4 +1,6 @@
-if(celcius > 0)
+int stub(celcius)
+{
+    if(celcius > 0)
     {
         return 200;
     }
@@ -6,3 +8,4 @@ if(celcius > 0)
     {
         return 500;
     }
+}

@@ -17,8 +17,6 @@ int printColorMap() {
             printf("%d  %s | %s\n", i * 5 + j, majorColorlist[i], minorColorlist[i]);
         }
     }
-    assert(strcmp(majorColorlist[0],"White"));
-    assert(strcmp(minorColorlist[0],"Blue"));
     return i * j;
 }
 
@@ -26,6 +24,8 @@ int main() {
     int result = printColorMap();
     assert(result == 25);
     //assert(result == 0);
+    assert(strcmp(majorColorlist[0],"White"));
+    assert(strcmp(minorColorlist[0],"Blue"));
     printf("All is well (maybe!)\n");
     return 0;
 }

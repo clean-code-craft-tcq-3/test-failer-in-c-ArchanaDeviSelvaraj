@@ -31,17 +31,16 @@ int main() {
     if(majorColorlist[0]==majorcolorpairone)
     {
         output=1;
+        //output=1 means expected results obtained
     }
     if(minorColorlist[1]==minorcolorpairtwo)
     {
         output=2;
+        //output=2 means expected results not obtained
     }
     assert(output == 1);
     assert(output == 2);
     assert(result == 25);
-    //assert(result == 0);
-    //assert(strcmp(majorColorlist[0],"White"));
-    //assert(strcmp(minorColorlist[0],"Blue"));
     printf("All is well (maybe!)\n");
     return 0;
 }

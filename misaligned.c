@@ -14,7 +14,6 @@ int printColorMap() {
             printf("%d  %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
             majorColorlist[i * 5 + j] = majorColor[i];
             minorColorlist[i * 5 + j] = minorColor[i];
-            //printf("%d  %s | %s\n", i * 5 + j, majorColorlist[i], minorColorlist[i]);
         }
     }
     return i * j;

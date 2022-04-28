@@ -7,15 +7,15 @@ enum environments{Test,Integration}environment;
 
     void CheckalertFailureCount(float farenheit)
     {
-        celcius = FarenheitToCelsius(float farenheit);
+        celcius = FarenheitToCelsius(farenheit);
         if (environment == Test)
         {
-            returncode = stub(float celcius);
+            returncode = stub(celcius);
         }
         else
         {
             //Integration environment
-            returncode = network(float celcius);
+            returncode = network(celcius);
         }
         if (returncode != 200) 
         {

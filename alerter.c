@@ -3,7 +3,7 @@
 #include "FarenheitToCelsius.h"
 
 int alertFailureCount = 0;
-enum environment={"Test","Integration"};
+enum environments{Test,Integration};
 
     void CheckalertFailureCount(float farenheit)
     {
@@ -28,6 +28,7 @@ enum environment={"Test","Integration"};
     }
 
 int main() {
+    enum environments environment;
     environment=Test;
     CheckalertFailureCount(400.5);
     environment=Integration;

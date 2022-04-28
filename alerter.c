@@ -3,8 +3,7 @@
 #include "FarenheitToCelsius.h"
 
 int alertFailureCount = 0;
-enum environments{Test,Integration};
-enum environments environment;
+enum environments{Test,Integration}environment;
 
     void CheckalertFailureCount(float farenheit)
     {

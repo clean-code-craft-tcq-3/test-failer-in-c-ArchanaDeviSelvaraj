@@ -1,1 +1,1 @@
-
+int FarenheitToCelsius(float ); 

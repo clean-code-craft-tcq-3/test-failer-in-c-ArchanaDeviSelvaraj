@@ -9,7 +9,7 @@ char environment[15];
     void CheckalertFailureCount(float farenheit)
     {
         celcius = FarenheitToCelsius(farenheit);
-        if (strcmp(environment[15],"Test"))
+        if (strcmp(environment,"Test"))
         {
             returncode = stub(celcius);
         }

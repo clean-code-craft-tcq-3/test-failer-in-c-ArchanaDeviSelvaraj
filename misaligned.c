@@ -38,7 +38,7 @@ int main() {
     assert(majorColorlist[0]==paironemajorcolor);
     //assert(minorColorlist[1]==pairtwominorcolor);
     assert(result == 25);
-    printf("%d\n",misalignederrorcount);
+    assert(misalignederrorcount==0);
     printf("All is well (maybe!)\n");
     return 0;
 }

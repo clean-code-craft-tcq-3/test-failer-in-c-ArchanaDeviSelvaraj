@@ -18,7 +18,6 @@ int printColorMap() {
             sprintf(misaligned, "%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
             printf("%s", misaligned);
             sprintf(aligned,"%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[i]);
-            printf("%s", aligned);
             if(strcmp(misaligned,aligned)!=0){
                 misalignederrorcount++;
             }
@@ -39,7 +38,7 @@ int main() {
     assert(majorColorlist[0]==paironemajorcolor);
     //assert(minorColorlist[1]==pairtwominorcolor);
     assert(result == 25);
-    printf("%d",misalignederrorcount);
+    printf("%d\n",misalignederrorcount);
     printf("All is well (maybe!)\n");
     return 0;
 }

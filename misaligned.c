@@ -5,8 +5,8 @@
 
 const char* majorColorlist[25];
 const char* minorColorlist[25];
-char* misaligned[50];
-char* aligned[50];
+char misaligned[50];
+char aligned[50];
 
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};

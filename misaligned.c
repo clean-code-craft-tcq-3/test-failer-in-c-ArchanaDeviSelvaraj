@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
+#include <stdlib.h>
 
 const char* majorColorlist[25];
 const char* minorColorlist[25];

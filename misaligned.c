@@ -11,8 +11,12 @@ int printColorMap() {
     int i = 0, j = 0;
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
-            printf("%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
-            printf("%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[i]);
+            char *misaligned = (char*)malloc(13 * sizeof(char));
+            sprintf(misaligned, "%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
+            //printf("%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
+            char *aligned = (char*)malloc(13 * sizeof(char));
+            sprintf(aligned,"%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[i]);
+            //printf("%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[i]);
             majorColorlist[i * 5 + j] = majorColor[i];
             minorColorlist[i * 5 + j] = minorColor[i];
         }

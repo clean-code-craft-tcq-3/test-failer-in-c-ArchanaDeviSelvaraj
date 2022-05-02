@@ -5,6 +5,8 @@
 
 const char* majorColorlist[25];
 const char* minorColorlist[25];
+char* misaligned[25];
+char* aligned[25];
 
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
@@ -12,11 +14,10 @@ int printColorMap() {
     int i = 0, j = 0;
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
-            char *misaligned = (char*)malloc(13 * sizeof(char));
-            sprintf(misaligned, "%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
+            
+            sprintf(misaligned[i * 5 + j], "%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
             //printf("%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
-            char *aligned = (char*)malloc(13 * sizeof(char));
-            sprintf(aligned,"%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[i]);
+            sprintf(aligned[i * 5 + j],"%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[i]);
             //printf("%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[i]);
             majorColorlist[i * 5 + j] = majorColor[i];
             minorColorlist[i * 5 + j] = minorColor[i];

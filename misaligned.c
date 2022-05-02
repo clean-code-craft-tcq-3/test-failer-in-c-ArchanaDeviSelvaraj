@@ -21,9 +21,9 @@ int printColorMap() {
 
 int main() {
     int result = printColorMap();
-    printf("Pair number  1 : %-6s|%-6s\n", majorColorlist[0], minorColorlist[0]);
-    printf("Pair number  4 : %-6s|%-6s\n", majorColorlist[3], minorColorlist[3]);
-    printf("Pair number 16 : %-6s|%-6s\n", majorColorlist[15], minorColorlist[15]);
+    printf("Pair number  1 : %-6s | %-6s\n", majorColorlist[0], minorColorlist[0]);
+    printf("Pair number  4 : %-6s | %-6s\n", majorColorlist[3], minorColorlist[3]);
+    printf("Pair number 16 : %-6s | %-6s\n", majorColorlist[15], minorColorlist[15]);
     const char* paironemajorcolor = "White";
     //const char* pairtwominorcolor = "Orange";
     assert(majorColorlist[0]==paironemajorcolor);

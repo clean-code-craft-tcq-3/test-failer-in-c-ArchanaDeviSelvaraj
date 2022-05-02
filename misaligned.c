@@ -21,14 +21,13 @@ int printColorMap() {
 
 int main() {
     int result = printColorMap();
-    int errorcount;
     printf("Pair number 1 : %s|%s\n", majorColorlist[0], minorColorlist[0]);
     printf("Pair number 4 : %s|%s\n", majorColorlist[3], minorColorlist[3]);
     printf("Pair number 16 : %s|%s\n", majorColorlist[15], minorColorlist[15]);
     const char* paironemajorcolor = "White";
     const char* pairtwominorcolor = "Orange";
     assert(majorColorlist[0]==paironemajorcolor);
-    asser(minorColorlist[1]==pairtwominorcolor);
+    assert(minorColorlist[1]==pairtwominorcolor);
     assert(result == 25);
     printf("All is well (maybe!)\n");
     return 0;

@@ -7,6 +7,7 @@ const char* majorColorlist[25];
 const char* minorColorlist[25];
 char misaligned[50];
 char aligned[50];
+int misalignederrorcount=0;
 
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
@@ -16,10 +17,11 @@ int printColorMap() {
         for(j = 0; j < 5; j++) {
             sprintf(misaligned, "%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
             printf("%s", misaligned);
-            //printf("%d | %s | %s\n", i * 5 + j, majorColor[i], minorColor[i]);
             sprintf(aligned,"%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[i]);
             printf("%s", aligned);
-            //printf("%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[i]);
+            if(strcmp(misaligned,aligned)!=0){
+                misalignederrorcount++;
+            }
             majorColorlist[i * 5 + j] = majorColor[i];
             minorColorlist[i * 5 + j] = minorColor[i];
         }
@@ -37,6 +39,7 @@ int main() {
     assert(majorColorlist[0]==paironemajorcolor);
     //assert(minorColorlist[1]==pairtwominorcolor);
     assert(result == 25);
+    printf("%d",misalignederrorcount);
     printf("All is well (maybe!)\n");
     return 0;
 }

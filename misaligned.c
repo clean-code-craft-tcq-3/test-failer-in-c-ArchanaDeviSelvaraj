@@ -27,17 +27,8 @@ int main() {
     printf("Pair number 16 : %s|%s\n", majorColorlist[15], minorColorlist[15]);
     const char* paironemajorcolor = "White";
     const char* pairtwominorcolor = "Orange";
-    if(majorColorlist[0]==paironemajorcolor)
-    {
-        errorcount=0;
-        //errorcount=0 means expected results obtained
-    }
-    if(minorColorlist[1]!=pairtwominorcolor)
-    {
-        errorcount=1;
-        //errorcount=1 means expected results not obtained
-    }
-    assert(errorcount == 0);
+    assert(majorColorlist[0]==paironemajorcolor);
+    asser(minorColorlist[1]==pairtwominorcolor);
     assert(result == 25);
     printf("All is well (maybe!)\n");
     return 0;

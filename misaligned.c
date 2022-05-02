@@ -5,7 +5,7 @@
 
 const char* majorColorlist[25];
 const char* minorColorlist[25];
-const char* misaligned25[];
+const char* misaligned[25];
 const char* aligned[25];
 
 int printColorMap() {

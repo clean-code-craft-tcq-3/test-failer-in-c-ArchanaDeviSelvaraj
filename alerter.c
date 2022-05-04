@@ -10,8 +10,8 @@ int main() {
     
     AlertFarenheitToCelcius(400.5,alertFailureCount,networkAlertInterface);
     AlertFarenheitToCelcius(303.6,alertFailureCount,networkAlertStub);
-    AlertFarenheitToCelcius(20,alertFailureCount,network);
-    AlertFarenheitToCelcius(10,alertFailureCount,networkAlertInterface);
+    AlertFarenheitToCelcius(20,alertFailureCount,networkAlertInterface);
+    AlertFarenheitToCelcius(10,alertFailureCount,networkAlertStub);
     printf("%d alerts failed.\n", alertFailureCount);
     assert(alertFailureCount == 1);
     printf("All is well (maybe!)\n");

@@ -13,7 +13,7 @@ int AlertFarenheitToCelcius(float farenheit,int alertFailureCount,int (*network)
 }
 
 int networkAlertStub(float celcius) {
-    printf("ALERT: Temperature is %.1f celcius.\n", celcius);
+    printf("Test environment : ALERT: Temperature is %.1f celcius.\n", celcius);
     // Return 200 for ok
     // Return 500 for not-ok
     // stub always succeeds and returns 200
@@ -21,7 +21,7 @@ int networkAlertStub(float celcius) {
 }
 
 int networkAlertInterface(float celcius) {
-    printf("ALERT: Temperature is %.1f celcius.\n", celcius);
+    printf("Integration environment : ALERT: Temperature is %.1f celcius.\n", celcius);
     // Return 200 for ok
     // Return 500 for not-ok
     // stub always succeeds and returns 200

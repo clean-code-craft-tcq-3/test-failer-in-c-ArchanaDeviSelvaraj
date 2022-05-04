@@ -1,4 +1,4 @@
-void AlertFarenheitToCelcius(float farenheit,int alertFailureCount,int *network) 
+void AlertFarenheitToCelcius(float farenheit,int alertFailureCount,int (*network)(float)) 
 {
          float celcius = (farenheit - 32) * 5 / 9;
          int returnCode = network(celcius);

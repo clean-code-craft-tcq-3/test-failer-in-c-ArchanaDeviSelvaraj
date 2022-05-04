@@ -22,7 +22,7 @@ int printColorMap() {
                 misalignederrorcount++;
             }
             majorColorlist[i * 5 + j] = majorColor[i];
-            minorColorlist[i * 5 + j] = minorColor[i];
+            minorColorlist[i * 5 + j] = minorColor[j];
         }
     }
     return i * j;

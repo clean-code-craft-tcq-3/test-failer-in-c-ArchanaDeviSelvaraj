@@ -3,8 +3,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-const char* majorColorlist[26];
-const char* minorColorlist[26];
+const char* majorColorlist[25];
+const char* minorColorlist[25];
 char misaligned[50];
 char aligned[50];
 int misalignederrorcount=0;
@@ -13,11 +13,11 @@ int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     int i = 0, j = 0;
-    for(i = 1; i <= 5; i++) {
-        for(j = 1; j <= 5; j++) {
-            sprintf(misaligned,"%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[j]);
+    for(i = 0; i < 5; i++) {
+        for(j = 0; j < 5; j++) {
+            sprintf(misaligned,"%2d | %-6s | %-6s\n", i * 5 + j + 1, majorColor[i], minorColor[j]);
             printf("%s", misaligned);
-            sprintf(aligned,"%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[j]);
+            sprintf(aligned,"%2d | %-6s | %-6s\n", i * 5 + j + 1, majorColor[i], minorColor[j]);
             if(strcmp(misaligned,aligned)!=0){
                 misalignederrorcount++;
             }

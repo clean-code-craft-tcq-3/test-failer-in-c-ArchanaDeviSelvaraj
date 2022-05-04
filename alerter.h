@@ -4,7 +4,7 @@ void FarenheitToCelsius(float farenheit)
     printf("ALERT: Temperature is %.1f celcius.\n", celcius);
  }
 
-void AlertFarenheitToCelcius(float farenheit) 
+void AlertFarenheitToCelcius(float farenheit,int alertFailureCount,int *network) 
 {
         celcius = FarenheitToCelsius (celcius);
         printf("ALERT: Temperature is %.1f celcius.\n", celcius);

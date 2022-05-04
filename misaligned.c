@@ -13,8 +13,8 @@ int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     int i = 0, j = 0;
-    for(i = 0; i < 5; i++) {
-        for(j = 0; j < 5; j++) {
+    for(i = 1; i <= 5; i++) {
+        for(j = 1; j <= 5; j++) {
             sprintf(misaligned,"%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[j]);
             printf("%s", misaligned);
             sprintf(aligned,"%2d | %-6s | %-6s\n", i * 5 + j, majorColor[i], minorColor[j]);

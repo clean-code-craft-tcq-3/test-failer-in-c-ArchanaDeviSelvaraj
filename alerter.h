@@ -1,4 +1,4 @@
-void AlertFarenheitToCelcius(float farenheit,int alertFailureCount,int (*network)(float)) 
+int AlertFarenheitToCelcius(float farenheit,int alertFailureCount,int (*network)(float)) 
 {
          float celcius = (farenheit - 32) * 5 / 9;
          int returnCode = network(celcius);
@@ -8,6 +8,7 @@ void AlertFarenheitToCelcius(float farenheit,int alertFailureCount,int (*network
                 // However, this code doesn't count failures!
                 // Add a test below to catch this bug. Alter the stub above, if needed.
                 alertFailureCount += 1;
+                return alertFailureCount;
             }
 }
 

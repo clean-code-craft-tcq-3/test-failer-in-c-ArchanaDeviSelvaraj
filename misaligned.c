@@ -3,8 +3,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-const char* majorColorlist[25];
-const char* minorColorlist[25];
+const char* majorColorlist[26];
+const char* minorColorlist[26];
 char misaligned[50];
 char aligned[50];
 int misalignederrorcount=0;
